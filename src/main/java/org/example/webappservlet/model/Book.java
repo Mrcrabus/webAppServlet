@@ -1,8 +1,5 @@
 package org.example.webappservlet.model;
 
-import java.util.HashSet;
-import java.util.Set;
-
 
 public class Book {
     private long id;
@@ -11,4 +8,10 @@ public class Book {
     private int year;
     private User user;
 
+    public Book(long id, String title, String author, int year) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
 }
