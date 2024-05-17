@@ -9,6 +9,9 @@ import java.util.Properties;
 public class DatabaseConnection {
     private static Connection connection = null;
 
+    private DatabaseConnection() {
+    }
+
     public static Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
             try {
